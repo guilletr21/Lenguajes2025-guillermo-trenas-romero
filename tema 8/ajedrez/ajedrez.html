@@ -2,14 +2,62 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Tablero de Ajedrez Guillermo trenas romero</title>
+    <title>Tablero de Ajedrez Guillermo Trenas Romero</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background: #e7e7e7;
+        margin: 0;
+      }
+
+      header,
+      footer {
+        padding: 10px;
+        background: #aa5a5a;
+        font-weight: bold;
+        margin: 2px;
+
+      }
+
+      table {
+        border-collapse: collapse;
+        margin: 0px auto;
+      }
+
+      th,
+      td {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .pequeño {
+        width: 50px;
+        height: 50px;
+      }
+      .blanco {
+        background-image: url("chess/madera_blanca.png");
+        background-size: cover;
+      }
+
+      .negro {
+        background-image: url("chess/madera_oscura.png");
+        background-size: cover;
+      }
+ 
+      img {
+        width: 90px;
+        height: 90px  ;
+      }
+    </style>
 
 <body>
 
 <header>
-    <h1>Tablero de Ajedrez Guillermo trenas romero</h1>
+    <h1>Tablero de Ajedrez Guillermo Trenas Romero</h1>
 </header>
 
 <main>
@@ -17,40 +65,40 @@
     <div class="contenedor-tablero">
         <table class="tablero">
 
-            <!-- Fila de cabeceras (A–H) -->
+            
             <tr>
                 <th></th>
                 <th>A</th><th>B</th><th>C</th><th>D</th>
                 <th>E</th><th>F</th><th>G</th><th>H</th>
             </tr>
 
-            <!-- FILA 8 – PIEZAS NEGRAS -->
+          
             <tr>
                 <th>8</th>
-                <td id="A8" class="negro"><img src="piezas/torre_negra.png"></td>
-                <td id="B8" class="blanco"><img src="piezas/caballo_negro.png"></td>
-                <td id="C8" class="negro"><img src="piezas/alfil_negro.png"></td>
-                <td id="D8" class="blanco"><img src="piezas/reina_negra.png"></td>
-                <td id="E8" class="negro"><img src="piezas/rey_negro.png"></td>
-                <td id="F8" class="blanco"><img src="piezas/alfil_negro.png"></td>
-                <td id="G8" class="negro"><img src="piezas/caballo_negro.png"></td>
-                <td id="H8" class="blanco"><img src="piezas/torre_negra.png"></td>
+                <td id="A8" class="negro"><img src="chess\chess_piece_2_black_rook.png"></td>
+                <td id="B8" class="blanco"><img src="chess\chess_piece_2_black_knight.png"></td>
+                <td id="C8" class="negro"><img src="chess\chess_piece_2_black_bishop.png"></td>
+                <td id="D8" class="blanco"><img src="chess\chess_piece_2_black_queen.png"></td>
+                <td id="E8" class="negro"><img src="chess\chess_piece_2_black_king.png"></td>
+                <td id="F8" class="blanco"><img src="chess\chess_piece_2_black_bishop.png"></td>
+                <td id="G8" class="negro"><img src="chess\chess_piece_2_black_knight.png"></td>
+                <td id="H8" class="blanco"><img src="chess\chess_piece_2_black_rook.png"></td>
             </tr>
 
-            <!-- FILA 7 – PEONES NEGROS -->
+            
             <tr>
                 <th>7</th>
-                <td class="blanco"><img src="piezas/peon_negro.png"></td>
-                <td class="negro"><img src="piezas/peon_negro.png"></td>
-                <td class="blanco"><img src="piezas/peon_negro.png"></td>
-                <td class="negro"><img src="piezas/peon_negro.png"></td>
-                <td class="blanco"><img src="piezas/peon_negro.png"></td>
-                <td class="negro"><img src="piezas/peon_negro.png"></td>
-                <td class="blanco"><img src="piezas/peon_negro.png"></td>
-                <td class="negro"><img src="piezas/peon_negro.png"></td>
+                <td class="blanco"><img src="chess\chess_piece_2_black_pawn.png"></td>
+                <td class="negro"><img src="chess\chess_piece_2_black_pawn.png"></td>
+                <td class="blanco"><img src="chess\chess_piece_2_black_pawn.png"></td>
+                <td class="negro"><img src="chess\chess_piece_2_black_pawn.png"></td>
+                <td class="blanco"><img src="chess\chess_piece_2_black_pawn.png"></td>
+                <td class="negro"><img src="chess\chess_piece_2_black_pawn.png"></td>
+                <td class="blanco"><img src="chess\chess_piece_2_black_pawn.png"></td>
+                <td class="negro"><img src="chess\chess_piece_2_black_pawn.png"></td>
             </tr>
 
-            <!-- FILAS 6 – 3 (VACÍAS) -->
+           
             <tr>
                 <th>6</th>
                 <td class="negro"></td><td class="blanco"></td><td class="negro"></td><td class="blanco"></td>
@@ -72,30 +120,30 @@
                 <td class="blanco"></td><td class="negro"></td><td class="blanco"></td><td class="negro"></td>
             </tr>
 
-            <!-- FILA 2 – PEONES BLANCOS -->
+           
             <tr>
                 <th>2</th>
-                <td class="negro"><img src="piezas/peon_blanco.png"></td>
-                <td class="blanco"><img src="piezas/peon_blanco.png"></td>
-                <td class="negro"><img src="piezas/peon_blanco.png"></td>
-                <td class="blanco"><img src="piezas/peon_blanco.png"></td>
-                <td class="negro"><img src="piezas/peon_blanco.png"></td>
-                <td class="blanco"><img src="piezas/peon_blanco.png"></td>
-                <td class="negro"><img src="piezas/peon_blanco.png"></td>
-                <td class="blanco"><img src="piezas/peon_blanco.png"></td>
+                <td class="negro"><img src="chess\chess_piece_2_white_pawn.png"></td>
+                <td class="blanco"><img src="chess\chess_piece_2_white_pawn.png"></td>
+                <td class="negro"><img src="chess\chess_piece_2_white_pawn.png"></td>
+                <td class="blanco"><img src="chess\chess_piece_2_white_pawn.png"></td>
+                <td class="negro"><img src="chess\chess_piece_2_white_pawn.png"></td>
+                <td class="blanco"><img src="chess\chess_piece_2_white_pawn.png"></td>
+                <td class="negro"><img src="chess\chess_piece_2_white_pawn.png"></td>
+                <td class="blanco"><img src="chess\chess_piece_2_white_pawn.png"></td>
             </tr>
 
-            <!-- FILA 1 – PIEZAS BLANCAS -->
+
             <tr>
                 <th>1</th>
-                <td id="A1" class="blanco"><img src="piezas/torre_blanca.png"></td>
-                <td id="B1" class="negro"><img src="piezas/caballo_blanco.png"></td>
-                <td id="C1" class="blanco"><img src="piezas/alfil_blanco.png"></td>
-                <td id="D1" class="negro"><img src="piezas/reina_blanca.png"></td>
-                <td id="E1" class="blanco"><img src="piezas/rey_blanco.png"></td>
-                <td id="F1" class="negro"><img src="piezas/alfil_blanco.png"></td>
-                <td id="G1" class="blanco"><img src="piezas/caballo_blanco.png"></td>
-                <td id="H1" class="negro"><img src="piezas/torre_blanca.png"></td>
+                <td id="A1" class="blanco"><img src="chess\chess_piece_2_white_rook.png"></td>
+                <td id="B1" class="negro"><img src="chess\chess_piece_2_white_knight.png"></td>
+                <td id="C1" class="blanco"><img src="chess\chess_piece_2_white_bishop.png"></td>
+                <td id="D1" class="negro"><img src="chess\chess_piece_2_white_queen.png"></td>
+                <td id="E1" class="blanco"><img src="chess\chess_piece_2_white_king.png"></td>
+                <td id="F1" class="negro"><img src="chess\chess_piece_2_white_bishop.png"></td>
+                <td id="G1" class="blanco"><img src="chess\chess_piece_2_white_knight.png"></td>
+                <td id="H1" class="negro"><img src="chess\chess_piece_2_white_rook.png"></td>
             </tr>
 
         </table>
@@ -104,7 +152,8 @@
 </main>
 
 <footer>
-    <p>© 2025 – Proyecto de diseño web • Ajedrez</p>
+    <p>Ajedrez</p>
+    <p>Autor: Guillermo Trenas Romero</p>
 </footer>
 
 </body>
