@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejericicio de Cajas CSS</title>
+    <style>
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #2f19f5;
+        }
+
+        p {
+            color: #3649f0;
+            font-size: 1.2rem;
+            border: 3px solid #312e2e;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #e6dada;
+        }
+
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 310px); 
+            grid-template-rows: repeat(3, 300px);    
+            gap: 5px; 
+
+        }
+
+        
+        .caja {
+            position: relative;
+            box-sizing: border-box; 
+            font-size: 0.9rem;
+            color: navy;
+        }
+
+        
+        .caja-1 {
+            background-color: antiquewhite;
+            border: 4px dotted black;
+            padding-top: 10%;
+            padding-left: 10%;
+            font-family: monospace;
+            font-size: 0.8rem;
+            color: navy;
+        }
+
+        
+        .caja-2 {
+            background-color: gold;
+            border-left: 60px solid black; 
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            border-radius: 0 40px 40px 0; 
+            padding: 10px;
+        }
+
+        
+        .caja-3 {
+            background-color: salmon;
+            border: 20px groove #c68c53; 
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+
+       
+        .caja-4 {
+            background-color: #99cc99; 
+            border: 25px inset #072213;
+            border-radius:0 80px 0 80px; 
+            padding: 10px;
+        }
+
+        .caja-4 span {
+            display: block;
+            font-family: monospace;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+       
+        .caja-5 {
+            background-color: bisque;
+            border: 4px dashed orange;
+            border-radius: 50%; 
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .question-mark {
+            font-size: 6rem;
+            font-weight: bold;
+            color: navy;
+        }
+
+        
+        .caja-6 {
+            background-color: lavender;
+            border: 20px outset navy;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+        .caja-7 {
+            background: linear-gradient(to bottom, orangered, yellow);
+            border-top: 5px solid red;
+            border-right: 5px solid red;
+            border-left: 5px solid red;
+            border-bottom: 15px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+        .caja-8 {
+            background-color: white;
+            border-style: solid;
+            border-width: 20px;
+            border-top-color: yellow;
+            border-right-color: green;
+            border-bottom-color: red;
+            border-left-color: blue;
+            padding: 10px;
+        }
+
+        .caja-9 {
+            background-color: white;
+            border: 30px double blueviolet;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+        <header>
+            <h1>Ejercicios de cajas CCS</h1>
+            <p>Listado de propiedades vistas en el modelo cajas, para conseguir estos estilos de cajas</p>
+
+
+    <div class="grid-container">
+        
+        <div class="caja caja-1">
+            <strong>Estilo de la caja</strong><br><br>
+            background-color:antiquewhite;<br>
+            border-color: black;<br>
+            border-style: dotted;<br>
+            border-width: 8px;<br>
+            padding-top: 10%;<br>
+            padding-left: 10%;
+        </div>
+
+        <div class="caja caja-2">
+            animales
+        </div>
+
+        <div class="caja caja-3">
+            Personas
+        </div>
+
+        <div class="caja caja-4">
+           ANTONIO
+            <span>border-style:inset;</span>
+        </div>
+
+        <div class="caja caja-5">
+            <div class="question-mark">?</div>
+        </div>
+
+        <div class="caja caja-6">
+            JONAS
+        </div>
+
+        <div class="caja caja-7">
+            mEDAC
+        </div>
+
+        <div class="caja caja-8">
+            daVante
+        </div>
+
+        <div class="caja caja-9">
+           FUchbol
+        </div>
+
+    </div>
+
+</body>
+    <p><a href="../../index.html" style="display:inline-block;padding:8px 12px;background:#007bff;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;">Volver al index</a></p>
+</html>

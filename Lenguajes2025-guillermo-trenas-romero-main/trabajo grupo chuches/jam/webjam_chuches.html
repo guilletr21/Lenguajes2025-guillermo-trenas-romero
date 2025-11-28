@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WebJam Chuches — SweetSpot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fff7fb;
+      --card:#ffffff;
+      --accent1:#ff7ab6; 
+      --accent2:#ffd36b; 
+      --accent3:#7be4ff; 
+      --muted:#8b8b98;
+      --radius:18px;
+      --glass: rgba(255,255,255,0.6);
+      --shadow: 0 8px 30px rgba(15,15,35,0.08);
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#222;background:linear-gradient(180deg,var(--bg),#fff);}
+
+    
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;background:linear-gradient(90deg,rgba(255,255,255,0.8),rgba(255,255,255,0.55));backdrop-filter:blur(6px);position:sticky;top:0;z-index:40;box-shadow:var(--shadow)}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--accent1),var(--accent3));display:flex;align-items:center;justify-content:center;color:white;font-family:Pacifico;font-size:20px;box-shadow:0 6px 18px rgba(123,228,255,0.18);}
+    .brand h1{margin:0;font-size:18px}
+    .brand p{margin:0;font-size:12px;color:var(--muted)}
+    .nav-links{display:flex;gap:12px}
+    .nav a{padding:10px 14px;border-radius:12px;text-decoration:none;color:#333;font-weight:600}
+    .nav a.active{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#fff}
+
+    
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;padding:48px 6vw}
+    .hero-left h2{font-size:40px;margin:0 0 12px}
+    .hero-left p{color:var(--muted);margin:0 0 18px}
+    .cta{display:inline-block;padding:12px 18px;border-radius:12px;background:linear-gradient(90deg,var(--accent3),var(--accent1));color:#fff;text-decoration:none;font-weight:700}
+    .hero-right{display:flex;flex-direction:column;gap:12px}
+    .card-sample{background:linear-gradient(180deg,rgba(255,255,255,0.9),var(--card));padding:18px;border-radius:18px;box-shadow:var(--shadow)}
+
+    
+    .products{padding:36px 6vw}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px}
+    .product{background:var(--card);border-radius:16px;padding:14px;text-align:center;box-shadow:var(--shadow)}
+    .product img{width:100%;height:120px;object-fit:cover;border-radius:10px}
+    .tag{display:inline-block;font-size:12px;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg,var(--accent2),var(--accent1));color:#fff;font-weight:700;margin-top:8px}
+
+    
+    .about{padding:36px 6vw;background:linear-gradient(180deg,transparent,rgba(255,250,255,0.6));}
+    .about .panel{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .panel .box{background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow)}
+    .panel h3{margin-top:0}
+    .roles{display:flex;flex-direction:column;gap:10px}
+    .role{display:flex;justify-content:space-between;padding:10px;border-radius:10px;background:linear-gradient(90deg,rgba(123,228,255,0.08),rgba(255,122,182,0.04));}
+
+    
+    .contact{padding:32px 6vw}
+    form{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:900px}
+    input,textarea{padding:12px;border-radius:10px;border:1px solid #eee;background:transparent}
+    textarea{grid-column:1/-1;min-height:120px}
+    .foot{padding:20px;background:transparent;text-align:center;color:var(--muted)}
+
+    
+    footer{padding:18px;text-align:center;color:var(--muted)}
+
+    
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr; padding:28px}
+      .hero-right{order:-1}
+      .panel{grid-template-columns:1fr}
+      form{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">
+      <div class="logo">🍬</div>
+      <div>
+        <h1>SweetSpot</h1>
+        <p>Tienda de chuches — WebJam</p>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#home" class="active">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#about">Sobre el proyecto</a>
+      <a href="#contact">Contacto</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <h2>Bienvenidos a SweetSpot — el paraíso de las chuches</h2>
+        <a class="cta" href="#productos">Ver productos</a>
+      </div>
+
+      <div class="hero-right">
+        <div class="card-sample">
+          <h3>Nuestras colecciones</h3>
+          <p style="color:var(--muted);margin:6px 0 12px">Gominolas, piruletas, chocolates y más — seleccionadas para todos los gustos.</p>
+          <div class="grid" style="grid-template-columns:repeat(3,1fr);gap:8px">
+            <div style="background:linear-gradient(135deg,var(--accent1),var(--accent2));height:64px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700">Gominolas</div>
+            <div style="background:linear-gradient(135deg,var(--accent3),var(--accent1));height:64px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700">Piruletas</div>
+            <div style="background:linear-gradient(135deg,var(--accent2),var(--accent3));height:64px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700">Chocolates</div>
+          </div>
+        </div>
+
+        <div class="card-sample">
+          <h4>Promoción semanal</h4>
+          <p style="color:var(--muted)">Pack mixto 20% OFF — edición WebJam</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="productos" class="products">
+      <h2 style="margin:0 6vw 18px">Productos destacados</h2>
+      <div class="grid">
+        <article class="product">
+          <img src="gominolas.jpeg" alt="Gominolas">
+          <h4>Gominolas surtidas</h4>
+          <div class="tag">3.50€</div>
+        </article>
+        <article class="product">
+          <img src="piruleta.jpeg" alt="Piruletas">
+          <h4>Piruletas arcoíris</h4>
+          <div class="tag">1.20€</div>
+        </article>
+        <article class="product">
+          <img src="tabletas de chocolate.jpeg" alt="Chocolates">
+          <h4>Tabletas de chocolate</h4>
+          <div class="tag">2.80€</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 style="margin:0 6vw 18px">Sobre el proyecto — Decisiones y organización</h2>
+      <div class="panel">
+        <div class="box">
+          <h3>1) Decisión de la temática</h3>
+          <p>Elegimos la temática de chuches (dulces) porque es visualmente atractiva y permite jugar con colores vivos y formas divertidas. Además es una temática fácil de reconocer y que conecta con un público amplio: desde niños a nostálgicos adultos. Para la web jam queríamos un tema que permitiera mostrar diseño (tipografías, paleta cromática), componentes (fichas de producto) y pequeñas interacciones (promociones, filtros).</p>
+        </div>
+
+        <div class="box">
+          <h3>2) Organización del trabajo</h3>
+          <p>Organizamos el trabajo en Sprints cortos (1 semana) para poder iterar rápido. Las tareas principales fueron:</p>
+          <ul>
+            <li>Definir paleta de colores y estilo visual.</li>
+            <li>Crear la estructura HTML y navegación (SPA con secciones).</li>
+            <li>Diseño de fichas de producto y componentes reutilizables.</li>
+            <li>Redacción del contenido y copy para la web.</li>
+            <li>Pruebas de responsive y accesibilidad básica.</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>3) Reparto de tareas </h3>
+          <p>A continuación hay un ejemplo de cómo se puede asignar el trabajo en el grupo. Sustituye los nombres por los de vuestro equipo.</p>
+          <div class="roles">
+            <div class="role">Jonas Garcia Escobar<strong></strong><span>Diseño UI/UX — paleta, tipografías</span></div>
+            <div class="role">Jose Guillermo Trenas Romero<strong></strong><span>HTML/CSS — maquetación y responsividad</span></div>
+            <div class="role">Daniel Pérez García<strong></strong><span>JavaScript y comportamiento — navegación, formularios</span></div>
+          </div>
+         
+
+        <div class="box">
+          <h3>4) Entregables y mejoras futuras</h3>
+          <p>Entregables: HTML/CSS/JS, guía de estilo (colores y tipografías) y mockups para redes sociales. Mejores futuras: añadir carrito y pasarela de pago simulada, sistema de filtrado por sabores y una página de administración para subir productos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 style="margin:0 6vw 18px">Contacto / Feedback</h2>
+      <form onsubmit="event.preventDefault();alert('Formulario de contacto simulado — sustituye por envío real');">
+        <input placeholder="Nombre" required />
+        <input placeholder="Email" type="email" required />
+        <input placeholder="Asunto" />
+        <textarea placeholder="Mensaje"></textarea>
+        <button type="submit" style="grid-column:1/-1;padding:12px;border-radius:12px;background:linear-gradient(90deg,var(--accent1),var(--accent3));color:white;border:none;font-weight:700">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="foot">SweetSpot — WebJam • Diseño moderno y homogéneo para todas las secciones</div>
+  </footer>
+
+  <script>
+    
+    const links = document.querySelectorAll('.nav a');
+    function setActive(hash){
+      links.forEach(a=>a.classList.toggle('active', a.getAttribute('href')===hash));
+      if(!document.querySelector(hash)) return;
+      window.scrollTo({top: document.querySelector(hash).offsetTop - 70, behavior:'smooth'});
+    }
+    links.forEach(a=>a.addEventListener('click', (e)=>{e.preventDefault();const h=a.getAttribute('href');history.pushState(null,'',h);setActive(h);}));
+    window.addEventListener('popstate', ()=>setActive(location.hash || '#home'));
+    
+    setActive(location.hash || '#home');
+  </script>
+</body>
+  <p><a href="../../index.html" style="display:inline-block;padding:8px 12px;background:#007bff;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;">Volver al index</a></p>
+</html>

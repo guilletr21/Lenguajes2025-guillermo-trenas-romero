@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web semantica</title>
+    <style>
+        body{
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(164, 224, 141);
+            padding: 10px;
+
+        }
+        .box{
+            border: 2px solid #666;
+            margin: 10px auto;
+        }
+        header,main,section,article,footer,figure,nav,aside {
+            display: block;
+            margin: 5px 0;
+            border: 1px solid black;
+            border-radius: 6px;
+            padding: 8px;
+        }
+        header{
+            background-color: rgb(161, 103, 216);
+        }
+        main{
+            background-color: rgb(170, 111, 89);
+        }
+        section{
+            background-color: rgb(139, 139, 238);
+        }
+        article{
+            background-color: rgb(209, 160, 96);
+        }
+        footer{
+            background-color: rgb(221, 221, 117);
+        }
+        figure{
+            background-color: rgb(150, 116, 116);
+        }
+        nav{
+            background-color: rgb(114, 202, 114);
+        }
+        aside{
+            background-color: rgb(235, 167, 178);
+        }
+        
+        .inline{
+            display: inline-block;
+            vertical-align: top;
+        }
+        .center{
+            text-align: center;
+        }
+        .w90{
+            width:90%;
+        }
+        .w80{
+            width:80%;
+        }
+         .w70{
+            width:70%;
+        }
+         .w60{
+            width:60%;
+        }
+         .w50{
+            width:50%;
+        }
+         .w40{
+            width:40%;
+        }
+         .w30{
+            width:30%;
+        }
+         .w20{
+            width:20%;
+        }
+
+
+    </style>
+ </head>
+ 
+ <body>
+    <header class="box center w80"> <p>&lt; Header &gt;</p> <figure class="inline w20">Figura <img src="https://placehold.co/100x100" alt="Logo"></figure> <h1 class="inline w50">Web semántica</h1> <aside class="inline w20">Elemento aside</aside></header>
+
+    <nav class="box w80 center"><a href="#">Enlace 1</a><a href="#">07/Enlace 2</a><a href="#">Enlace 3</a> </nav>
+
+    <main class="box w80">
+        <section>
+            <p>&lt; section &gt;</p>
+            
+            <section class="inline w70">
+                <p>&lt; section &gt;</p>
+                <header class="box">&lt; header &gt;</header>
+                <article>&lt; article &gt;</article>
+                <figure class="w100">&lt; figure &gt;</figure>
+                <footer>&lt; footer &gt;</footer>
+            </section>
+            
+            <section class="inline w20">
+                <p>&lt; section &gt;</p>
+                <article>&lt; article &gt;</article>
+                <article>&lt; article &gt;</article>
+                <article>&lt; article &gt;</article>
+            </section>
+
+        </section>
+
+        <section>
+           
+            <section class="inline w70">
+                <p>&lt; section &gt;</p>
+                <section class="inline w70">
+                <header class="box">&lt; header &gt;</header>
+                <article>&lt; article &gt;</article>
+                <figure class="w100">&lt; figure &gt;</figure>
+                <footer>&lt; footer &gt;</footer>
+                </section>
+            </section>
+
+            <section class="inline w20">
+                <p>&lt; section &gt;</p>
+                <aside>&lt; aside &gt;</aside>
+                <figure>&lt; figure &gt;</figure>
+            </section>
+
+        </section>
+
+        <section>
+            <aside>&lt; aside &gt;</aside>
+        </section>
+
+    </main>
+
+    <footer class="box w80 center">&lt; footer &gt;</footer>
+</body>
+    <p><a href="../index.html" style="display:inline-block;padding:8px 12px;background:#007bff;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;">Volver al index</a></p>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tablero de Ajedrez Guillermo Trenas Romero</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background: #e7e7e7;
+        margin: 0;
+      }
+
+      header,
+      footer {
+        padding: 10px;
+        background: #aa5a5a;
+        font-weight: bold;
+        margin: 2px;
+
+      }
+
+      table {
+        border-collapse: collapse;
+        margin: 0px auto;
+      }
+
+      th,
+      td {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .pequeño {
+        width: 50px;
+        height: 50px;
+      }
+      .blanco {
+        background-image: url("chess/madera_blanca.png");
+        background-size: cover;
+      }
+
+      .negro {
+        background-image: url("chess/madera_oscura.png");
+        background-size: cover;
+      }
+ 
+      img {
+        width: 90px;
+        height: 90px  ;
+      }
+    </style>
+
+<body>
+
+<header>
+    <h1>Tablero de Ajedrez Guillermo Trenas Romero</h1>
+</header>
+
+<main>
+
+    <div class="contenedor-tablero">
+        <table class="tablero">
+
+            
+            <tr>
+                <th></th>
+                <th>A</th><th>B</th><th>C</th><th>D</th>
+                <th>E</th><th>F</th><th>G</th><th>H</th>
+            </tr>
+
+          
+            <tr>
+                <th>8</th>
+                <td id="A8" class="negro"><img src="chess\chess_piece_2_black_rook.png"></td>
+                <td id="B8" class="blanco"><img src="chess\chess_piece_2_black_knight.png"></td>
+                <td id="C8" class="negro"><img src="chess\chess_piece_2_black_bishop.png"></td>
+                <td id="D8" class="blanco"><img src="chess\chess_piece_2_black_queen.png"></td>
+                <td id="E8" class="negro"><img src="chess\chess_piece_2_black_king.png"></td>
+                <td id="F8" class="blanco"><img src="chess\chess_piece_2_black_bishop.png"></td>
+                <td id="G8" class="negro"><img src="chess\chess_piece_2_black_knight.png"></td>
+                <td id="H8" class="blanco"><img src="chess\chess_piece_2_black_rook.png"></td>
+            </tr>
+
+            
+            <tr>
+                <th>7</th>
+                <td class="blanco"><img src="chess\chess_piece_2_black_pawn.png"></td>
+                <td class="negro"><img src="chess\chess_piece_2_black_pawn.png"></td>
+                <td class="blanco"><img src="chess\chess_piece_2_black_pawn.png"></td>
+                <td class="negro"><img src="chess\chess_piece_2_black_pawn.png"></td>
+                <td class="blanco"><img src="chess\chess_piece_2_black_pawn.png"></td>
+                <td class="negro"><img src="chess\chess_piece_2_black_pawn.png"></td>
+                <td class="blanco"><img src="chess\chess_piece_2_black_pawn.png"></td>
+                <td class="negro"><img src="chess\chess_piece_2_black_pawn.png"></td>
+            </tr>
+
+           
+            <tr>
+                <th>6</th>
+                <td class="negro"></td><td class="blanco"></td><td class="negro"></td><td class="blanco"></td>
+                <td class="negro"></td><td class="blanco"></td><td class="negro"></td><td class="blanco"></td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td class="blanco"></td><td class="negro"></td><td class="blanco"></td><td class="negro"></td>
+                <td class="blanco"></td><td class="negro"></td><td class="blanco"></td><td class="negro"></td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td class="negro"></td><td class="blanco"></td><td class="negro"></td><td class="blanco"></td>
+                <td class="negro"></td><td class="blanco"></td><td class="negro"></td><td class="blanco"></td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td class="blanco"></td><td class="negro"></td><td class="blanco"></td><td class="negro"></td>
+                <td class="blanco"></td><td class="negro"></td><td class="blanco"></td><td class="negro"></td>
+            </tr>
+
+           
+            <tr>
+                <th>2</th>
+                <td class="negro"><img src="chess\chess_piece_2_white_pawn.png"></td>
+                <td class="blanco"><img src="chess\chess_piece_2_white_pawn.png"></td>
+                <td class="negro"><img src="chess\chess_piece_2_white_pawn.png"></td>
+                <td class="blanco"><img src="chess\chess_piece_2_white_pawn.png"></td>
+                <td class="negro"><img src="chess\chess_piece_2_white_pawn.png"></td>
+                <td class="blanco"><img src="chess\chess_piece_2_white_pawn.png"></td>
+                <td class="negro"><img src="chess\chess_piece_2_white_pawn.png"></td>
+                <td class="blanco"><img src="chess\chess_piece_2_white_pawn.png"></td>
+            </tr>
+
+
+            <tr>
+                <th>1</th>
+                <td id="A1" class="blanco"><img src="chess\chess_piece_2_white_rook.png"></td>
+                <td id="B1" class="negro"><img src="chess\chess_piece_2_white_knight.png"></td>
+                <td id="C1" class="blanco"><img src="chess\chess_piece_2_white_bishop.png"></td>
+                <td id="D1" class="negro"><img src="chess\chess_piece_2_white_queen.png"></td>
+                <td id="E1" class="blanco"><img src="chess\chess_piece_2_white_king.png"></td>
+                <td id="F1" class="negro"><img src="chess\chess_piece_2_white_bishop.png"></td>
+                <td id="G1" class="blanco"><img src="chess\chess_piece_2_white_knight.png"></td>
+                <td id="H1" class="negro"><img src="chess\chess_piece_2_white_rook.png"></td>
+            </tr>
+
+        </table>
+    </div>
+
+</main>
+
+<footer>
+    <p>Ajedrez</p>
+    <p>Autor: Guillermo Trenas Romero</p>
+</footer>
+
+</body>
+  <p><a href="../../index.html" style="display:inline-block;padding:8px 12px;background:#007bff;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;">Volver al index</a></p>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {   color: yellow; } /* universal */
+div { background-color: green; } /*de elemento*/
+.noticia { background-color: red;} /*de clase */
+#nombre {   background-color: blue; width:50%; } /*de identificador */ 
+p.apellidos { font-size: 80px;} /* de clase de elemento */
+div b {   font-size: 60px; } /*descendente */
+em, i { color:black;}
+</style>
+</head>
+<body>
+<h1>Demo</h1>
+<div>
+  <p id="nombre">Este es el Nombre</p>
+  <p class="apellidos">y estos los apellidos </p>
+</div>
+<div class="noticia">
+  <p id="nombre">Este es el Nombre</p>
+  <p >Y esto un texto normal en el div de clase noticia</p>
+  <p >Y a ésta <b>negrita</b> le afecta el selector descendente</p>
+</div>
+<p>A este negrita no le afecta el tamaño <b>Mickey<b></p>
+<p>y la <i>cursiva</i> y el <em>enfasis</em> está en negro porque estan agrupados</p>
+</body>
+  <p><a href="../index.html" style="display:inline-block;padding:8px 12px;background:#007bff;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;">Volver al index</a></p>
+</html>
